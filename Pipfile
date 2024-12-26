@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-dotenv = "*"
+python-dotenv = "*"
+sqlalchemy = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+
+[dev-packages]
+
+[scripts]
+dev = "flask run"
+db-init = "flask db init"
+db-migrate = "flask db migrate"
+db-upgrade = "flask db upgrade"
+
+[requires]
+python_version = "3.10"
